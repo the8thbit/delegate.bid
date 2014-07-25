@@ -6,3 +6,4 @@ module.exports = function(app){
 
 	//get the JADE template pages used in the project
 	app.get('/', function(req, res){ res.render('main/main'); });
+}
