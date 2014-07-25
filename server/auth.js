@@ -1,7 +1,7 @@
 module.exports = function(app){
 	var config       = require('./../config.js');
 	var passport     = require('passport');
-	var passportSIO  = require('passport.socketio');
+	var passportSIO  = require('passport.socket.io');
 	var passConfig   = require('./passConfig.js')(passport);
 	var sessionStore = require('sessionstore');
 
