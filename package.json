@@ -13,6 +13,6 @@
 		"mongoose": "latest",
 		"passport": "latest",
 		"passport.socket.io": "latest",
-		"sessionstore": "latest",
+		"sessionstore": "latest"
 	}
 }
