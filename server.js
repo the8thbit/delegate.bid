@@ -5,7 +5,6 @@ DELBID.express   = EXPRESS;
 DELBID.config    = require('./config.js');
 DELBID.stylus    = require('stylus');
 DELBID.db        = require('./server/schemas/mainDB.js');
-DELBID.speakeasy = require('speakeasy-nlp');
 DELBID.auth      = require('./server/auth.js')(DELBID);
 
 //standard function for handling errors
