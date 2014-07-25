@@ -5,39 +5,39 @@ if( typeof( window ) === 'undefined' ) {     // if there isn't a window, then th
 //============================================//
 //IP ADDRESS                                  //
   var SERVER_IP =                             //
-  process.env.DELBID_NODEJS_IP                // toggle on for local testing
-//process.env.OPENSHIFT_NODEJS_IP             // toggle on for openshift deploy
+//process.env.DELBID_NODEJS_IP                // toggle on for local testing
+  process.env.OPENSHIFT_NODEJS_IP             // toggle on for openshift deploy
 //============================================//
 //PORT NUMBER                                 //
   var SERVER_PORT =                           //
-  process.env.DELBID_NODEJS_PORT              // toggle on for local testing
-//process.env.OPENSHIFT_NODEJS_PORT           // toggle on for openshift deploy
+//process.env.DELBID_NODEJS_PORT              // toggle on for local testing
+  process.env.OPENSHIFT_NODEJS_PORT           // toggle on for openshift deploy
 //============================================//
 //SECRET FOR SESSION DATA                     //
   var COOKIE_SECRET =                         //
-  process.env.DELBID_COOKIE_SECRET            // toggle on for local testing
-//process.env.OPENSHIFT_COOKIE_SECRET         // toggle on for openshift deploy
+//process.env.DELBID_COOKIE_SECRET            // toggle on for local testing
+  process.env.OPENSHIFT_COOKIE_SECRET         // toggle on for openshift deploy
 //============================================//
 //MONGODB CONNECTION INFO                     //
   var MONGO_USER =                            //
-  process.env.DELBID_MONGO_DB_USERNAME        // toggle on for local testing
-//process.env.OPENSHIFT_MONGODB_DB_USERNAME   // toggle on for openshift deploy
+//process.env.DELBID_MONGO_DB_USERNAME        // toggle on for local testing
+  process.env.OPENSHIFT_MONGODB_DB_USERNAME   // toggle on for openshift deploy
 //============================================//
   var MONGO_PASS =                            //
-  process.env.DELBID_MONGO_DB_PASS            // toggle on for local testing
-//process.env.OPENSHIFT_MONGODB_DB_PASSWORD   // toggle on for openshift deploy
+//process.env.DELBID_MONGO_DB_PASS            // toggle on for local testing
+  process.env.OPENSHIFT_MONGODB_DB_PASSWORD   // toggle on for openshift deploy
 //============================================//
   var MONGO_IP =                              //
-  process.env.DELBID_MONGO_DB_IP              // toggle on for local testing
-//process.env.OPENSHIFT_MONGODB_DB_HOST       // toggle on for openshift deploy
+//process.env.DELBID_MONGO_DB_IP              // toggle on for local testing
+  process.env.OPENSHIFT_MONGODB_DB_HOST       // toggle on for openshift deploy
 //============================================//
   var MONGO_PORT =                            //
-  process.env.DELBID_MONGO_DB_PORT            // toggle on for local testing
-//process.env.OPENSHIFT_MONGODB_DB_PORT       // toggle on for openshift deploy
+//process.env.DELBID_MONGO_DB_PORT            // toggle on for local testing
+  process.env.OPENSHIFT_MONGODB_DB_PORT       // toggle on for openshift deploy
 //============================================//
   var MONGO_DB_NAME =                         //
-  process.env.DELBID_MONGO_DB_NAME            // toggle on for local testing
-//process.env.OPENSHIFT_MONGO_DB_NAME         // toggle on for openshift deploy
+//process.env.DELBID_MONGO_DB_NAME            // toggle on for local testing
+  process.env.OPENSHIFT_MONGO_DB_NAME         // toggle on for openshift deploy
 //============================================//
 }                                             //
 //============================================//
@@ -47,13 +47,13 @@ if( typeof( window ) === 'undefined' ) {     // if there isn't a window, then th
 //============================================//
 //IP ADDRESS                                  //
   var CLIENT_IP =                             //
-  'localhost'                                 // toggle on for local testing
-//'delegate.bid'                              // toggle on for openshift deploy (swap in your own domain)
+//'localhost'                                 // toggle on for local testing
+  'delegate.bid'                              // toggle on for openshift deploy (swap in your own domain)
 //============================================//
 //PORT NUMBER                                 //
   var CLIENT_PORT =                           //
-  8080                                        // toggle on for local testing
-//8000                                        // neccessary for openshift, as websockets is restricted to this port
+//8080                                        // toggle on for local testing
+  8000                                        // neccessary for openshift, as websockets is restricted to this port
 //============================================//
 
 
