@@ -13,7 +13,7 @@
 		"mongoose": "latest",
 		"bcrypt": "latest",
 		"passport": "latest",
-		"passport.socket.io": "latest",
+		"passport.socketio": "latest",
 		"sessionstore": "latest"
 	}
 }
