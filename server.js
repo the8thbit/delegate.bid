@@ -24,7 +24,6 @@ DELBID.routes          = {};
 DELBID.routes.auth     = require('./server/routes/auth.js'   )(DELBID);
 DELBID.routes.views    = require('./server/routes/views.js'  )(DELBID);
 DELBID.routes.queries  = require('./server/routes/queries.js')(DELBID);
-DELBID.routes.other    = require('./server/routes/other.js'  )(DELBID);
 
 //use socket.io and give it a location to listen on 
 DELBID.socketio = require('socket.io').listen(DELBID.listen(DELBID.config.SERVER_PORT, DELBID.config.SERVER_IP));
