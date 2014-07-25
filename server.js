@@ -1,5 +1,5 @@
 var EXPRESS = require('express');
-DELBID = express();
+DELBID = EXPRESS();
 
 DELBID.express   = EXPRESS;
 DELBID.config    = require('./config.js');
