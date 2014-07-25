@@ -17,7 +17,7 @@ DELBID.handleErr = function(err, cb){
 
 //use stylus templates for CSS
 DELBID.compile = function(str, path){ return DELBID.stylus(str).set('filename', path); } 
-DELBID.use(DELBID.stylus.middleware({ src: __dirname + '/' , compile: compile }));
+DELBID.use(DELBID.stylus.middleware({ src: __dirname + '/' , compile: DELBID.compile }));
 DELBID.use(DELBID.express.static(__dirname + '/'));
 
 DELBID.routes          = {};
