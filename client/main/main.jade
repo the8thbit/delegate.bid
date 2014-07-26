@@ -1,10 +1,32 @@
 doctype html
-html(lang="en", data-ng-app='DELBID')
+html( lang='en', ng-app='DELBID' )
 	head
 		title='delegate.bid'
-		link(rel='stylesheet', href='/client/main/main.css')
-		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js')
-		script(src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-route.js')
-		script(src='/client/main/main.js' type='text/javascript')
+		link( rel='stylesheet' type='text/css' href='/client/main/main.css' )
+		script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js' )
+		script( src='//ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular-route.js' )
+		script( src='/client/main/main.js' )
 	body
-		div It works!
+		div( class='main' )
+			div( class='main-table' ng-controller='DelegateTableCtrl' )
+				div( class='main-table-row' )
+					div( class='main-table-header' )
+					div( class='main-table-header' ) name
+					div( class='main-table-header' ) owner
+					div( class='main-table-header' ) category
+					div( class='main-table-header' ) description
+					div( class='main-table-header' ) payrate
+					div( class='main-table-header' ) owner payrate
+					div( class='main-table-header' ) reliability
+					div( class='main-table-header' ) version
+				div( class='main-table-row main-table-row-{{delegate.category}}' ng-repeat='delegate in delegates' )
+					div( class='main-table-cell' ) 
+						img( src='http://robohash.org/{{delegate.name}}.png' )
+					div( class='main-table-cell' ) {{delegate.name}}
+					div( class='main-table-cell' ) {{delegate.owner}}
+					div( class='main-table-cell' ) {{delegate.category}}
+					div( class='main-table-cell' ) {{delegate.desc}}
+					div( class='main-table-cell' ) {{delegate.pay}}
+					div( class='main-table-cell' ) {{delegate.ownerpay}}
+					div( class='main-table-cell' ) {{delegate.uptime}}
+					div( class='main-table-cell' ) {{delegate.version}}
